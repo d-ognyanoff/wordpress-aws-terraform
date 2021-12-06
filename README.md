@@ -15,18 +15,18 @@ You will have to create an IAM user with AdministratorAccess. You will need to i
 
 and add the Access Key and the Secret Key from the IAM user account you have created earlier.
 
-## Addiotional setup
+## Additional setup
 
 You will have to create a Key Pair in AWS which is being used to login to the web servers that will host WordPress and install it using Ansible
 
-For the DB crentials and the SSH Key you will have to edit the terraform/variables.tf 
+For the DB credentials and the SSH Key you will have to edit the terraform/variables.tf with the desired DB name, username for the DB and the password. Terraform will use those.
 
 When you create the Key Pair you should download the key automatically. Please edit the terraform/servers.tmpl with the location of the .pem file.
 
 
 ## Deploy
 
-After you clone the git repe edit the DB credentials and the DB name, add your ssh key and run 
+After you clone the git repo edit the DB credentials and the DB name, add your ssh key and run 
 
 ``` terraform init ``` in the terraform/ directory.
 
