@@ -1,6 +1,10 @@
 # wordpress-aws-terraform
 A deployment of Wordpress on AWS with Terraform
 
+## Terraform Installation
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli
+
 ## AWS CLI
 
 for the terraform to AWS access:
